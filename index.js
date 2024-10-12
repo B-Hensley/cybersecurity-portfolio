@@ -11,6 +11,13 @@ navToggleInput.addEventListener('click', () => {
     navLinkList.classList.toggle("links-slide");
 });
 
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        closeMenu();
+    });
+});
+
 // Function to handle reduced motion preference
 function handleReducedMotion() {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -62,12 +69,7 @@ window.matchMedia("(prefers-reduced-motion: reduce)").addEventListener((e) => {
 
 // Close the menu on nav link click
 function closeMenu() {
+    navToggleInput.checked = false; // Uncheck the input (if it's a checkbox input controlling the menu)
     navToggle.classList.remove("menu-clicked");
     navLinkList.classList.remove("links-slide");
 }
-
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        closeMenu();
-    });
-});
