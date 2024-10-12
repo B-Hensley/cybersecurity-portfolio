@@ -11,6 +11,13 @@ navToggleInput.addEventListener('click', () => {
     navLinkList.classList.toggle("links-slide");
 });
 
+// Add event listener to close the menu when a nav link is clicked
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        closeMenu();
+    });
+});
+
 // Function to handle reduced motion preference
 function handleReducedMotion() {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -67,9 +74,4 @@ function closeMenu() {
     navLinkList.classList.remove("links-slide");
 }
 
-// Add event listener to close the menu when a nav link is clicked
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        closeMenu();
-    });
-});
+
