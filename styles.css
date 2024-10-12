@@ -389,7 +389,12 @@ footer {
 }
 
 .footer-img {
+    transition: transform 0.2s;
     width: 2rem;
+}
+
+.footer-img:hover {
+    transform: scale(1.1);
 }
 
 /* -- Copyright Section -- */
