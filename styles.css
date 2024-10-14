@@ -316,9 +316,9 @@ body, html {
 
 /* Scroller Track Animation */
 .scroller-track {
-    animation: scroll-skills 24s linear infinite;
+    animation: scroll-skills 40s linear infinite;
     display: flex;
-    gap: 8rem;
+    gap: 10rem;
     padding: 0;
     width: max-content;
     will-change: transform;
@@ -326,7 +326,7 @@ body, html {
 
 @keyframes scroll-skills {
     to {
-        transform: translateX(calc(-50% - 3rem));
+        transform: translateX(calc(-50% - 5rem));
     }
 }
 
@@ -532,6 +532,7 @@ footer {
     }
 
     .scroller-track {
+        animation: scroll-skills 24s linear infinite;
         gap: 2rem;
     }
 

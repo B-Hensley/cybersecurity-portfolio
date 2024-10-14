@@ -39,6 +39,7 @@ function handleReducedMotion() {
 
         // Duplicate content for the scrolling effect
         duplicatedContent();
+        duplicatedContent();
     }
 }
 
