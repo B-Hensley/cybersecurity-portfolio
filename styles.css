@@ -569,6 +569,11 @@ footer {
         width: 200px;
     }
 
+    #cert-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     #contact-section {
         flex-direction: column;
         gap: 1rem;
