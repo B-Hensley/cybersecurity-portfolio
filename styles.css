@@ -37,6 +37,13 @@ body, html {
     text-decoration: none;
 }
 
+.lg-body-text {
+    color: var(--font-color);
+    font-family: var(--body-font-family);
+    font-size: var(--lg-body-font-size);
+    text-decoration: none;
+}
+
 .center-text {
     position: relative;
     text-align: center;
