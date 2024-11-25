@@ -192,22 +192,25 @@ body, html {
 }
 
 #view-skills-btn {
-    background-color: var(--secondary-accent-color);
+    background-color: var(--accent-color);
     border-radius: 10px;
     border: 3px solid var(--secondary-accent-color);
     color: var(--font-color);
     cursor: pointer;
     font-family: var(--body-font-family);
     font-size: var(--lg-body-font-size);
+    font-weight: 600;
     margin: auto;
+    margin-bottom: 1rem;
     margin-top: 0;
     opacity: 0.8;
     padding: 0.2rem 1.5rem;
-    transition: all 0.2s;
+    transition: all 0.1s;
     width: fit-content;
 }
 
 #view-skills-btn:hover {
+    border: 2px solid white;
     transform: scale(1.1);
 }
 
@@ -323,7 +326,8 @@ body, html {
 }
 
 .cert-img {
-    width: 125px;
+    height: 135px;
+    width: 150px;
 }
 
 /* Skills Section Scroller */
@@ -475,7 +479,7 @@ footer {
         flex-direction: column-reverse;
         gap: 0rem;
         margin: 0;
-        padding: 32px 0;
+        padding: 0 0;
         width: 100%;
     }
 
@@ -487,6 +491,10 @@ footer {
         width: 80%;
     }
 
+    #certification-section {
+        padding-top: 0;
+    }
+
     #skills-certs-section {
         height: auto;
     }
@@ -494,6 +502,20 @@ footer {
     #skills-bg-img {
         min-height: 100%;
         object-fit: cover;
+    }
+
+    #cert-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .cert-img {
+        grid-column: span 4;
+    }
+
+    #fourth-cert, #last-cert {
+        grid-column: span 6;
+        justify-self: center;
     }
 
     .scroller {
@@ -563,6 +585,10 @@ footer {
         transform: translate(2.5rem, 0) rotate(-45deg);
     }
 
+    .heading-section {
+        margin-top: 80px;
+    }
+
     .section-paragraph {
         text-align: left;
     }
@@ -574,11 +600,6 @@ footer {
     .avatar {
         height: 200px;
         width: 200px;
-    }
-
-    #cert-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 
     #contact-section {
@@ -608,9 +629,9 @@ footer {
         --title-font-size: 2.5rem;
     }
 
-    html {
+    /* html {
         scroll-padding-top: 0px;
-    }
+    } */
 
     .nav-link::after {
         display: none;
@@ -620,8 +641,8 @@ footer {
         padding: 0 .5rem;
     }
 
-    .heading-section {
-        margin-top: 102px;
+    #heading-desc {
+        width: 95%;
     }
 
     .section-paragraph {
