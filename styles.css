@@ -488,6 +488,7 @@ footer {
     }
 
     .education-section {
+        margin-bottom: 1rem;
         width: 80%;
     }
 
@@ -605,6 +606,14 @@ footer {
     #contact-section {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .cert-img {
+        grid-column: span 6;
+    }
+
+    #last-cert {
+        grid-column: span 12;
     }
 
     .scroller-track {
