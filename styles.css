@@ -21,7 +21,7 @@ body, html {
     margin: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 70px; /* To prevent navbar from covering sections */
+    scroll-padding-top: 50px; /* To prevent navbar from covering sections */
 }
 
 .flex-column {
@@ -74,7 +74,7 @@ body, html {
     align-items: center;
     background-color: var(--secondary-color);
     display: flex;
-    height: 70px;
+    height: 50px;
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -136,7 +136,7 @@ body, html {
     height: fit-content;
     justify-content: flex-start;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 10vh;
     padding: 0;
     width: fit-content;
 }
@@ -547,7 +547,7 @@ footer {
     }
 
     .links-slide {
-        top: 70px;
+        top: 50px;
     }
 
     .nav-toggle-label, .nav-toggle-label::before, .nav-toggle-label::after {
@@ -587,7 +587,7 @@ footer {
     }
 
     .heading-section {
-        margin-top: 80px;
+        margin-top: 70px;
     }
 
     .section-paragraph {
@@ -648,6 +648,10 @@ footer {
 
     #welcome-section {
         padding: 0 .5rem;
+    }
+
+    .heading-section {
+        gap: 0.5rem;
     }
 
     #heading-desc {
