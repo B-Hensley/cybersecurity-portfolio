@@ -204,7 +204,7 @@ body, html {
     margin-bottom: 1rem;
     margin-top: 0;
     opacity: 0.8;
-    padding: 0.2rem 1.5rem;
+    padding: 0.5rem 2rem;
     transition: all 0.1s;
     width: fit-content;
 }
@@ -547,7 +547,7 @@ footer {
     }
 
     .links-slide {
-        top: 50px;
+        top: 0px;
     }
 
     .nav-toggle-label, .nav-toggle-label::before, .nav-toggle-label::after {
