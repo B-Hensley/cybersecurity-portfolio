@@ -204,7 +204,7 @@ body, html {
     margin-bottom: 1rem;
     margin-top: 0;
     opacity: 0.8;
-    padding: 0.5rem 2rem;
+    padding: 8px 32px;
     transition: all 0.1s;
     width: fit-content;
 }
@@ -652,6 +652,7 @@ footer {
 
     .heading-section {
         gap: 0.5rem;
+        margin-top: 3.5rem;
     }
 
     #heading-desc {
