@@ -169,7 +169,6 @@ body, html {
     height: fit-content;
     justify-content: center;
     margin: auto;
-    margin-bottom: 1rem;
     padding: 0;
     position: relative;
     right: 0%;
@@ -626,6 +625,10 @@ footer {
             transform: translateX(calc(-50% - 1rem));
         }
     }
+
+    .footer-heading {
+        font-size: var(--sm-subheading-font-size);
+    }
 }
 
 /* Styles for screens smaller than 550px */
@@ -657,6 +660,10 @@ footer {
 
     #heading-desc {
         width: 95%;
+    }
+
+    #view-skills-btn {
+        padding: 1rem 2.5rem;
     }
 
     .section-paragraph {
