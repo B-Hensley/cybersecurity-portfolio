@@ -674,6 +674,7 @@ footer {
 
     .cert-modal {
         bottom: auto;
+        display: none;
         left: 50%;
         margin-inline: auto;
         position: fixed;
