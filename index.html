@@ -253,7 +253,7 @@
                 <fieldset id="input-field">
                     <div class="input-container">
                         <label for="name" class="input-label">Name</label>
-                        <input id="name-input" name="name" type="text" class="form-input" placeholder="Your Name" required>
+                        <input id="name-input" name="name" type="text" class="form-input" placeholder="Your Name" maxlength="50" required>
                     </div>
                     <div class="input-container">
                         <label for="email" class="input-label">Email</label>
@@ -262,7 +262,7 @@
                 </fieldset>
                 <div class="input-container">
                     <label for="message" class="input-label">Message</label>
-                    <textarea class="form-input" rows="3" name="message" id="message" placeholder="Your Message..." required></textarea>
+                    <textarea class="form-input" rows="3" name="message" id="message" placeholder="Your Message..." maxlength="500" required></textarea>
                 </div>
                 <button id="send-btn" type="submit">Send Email</button>
             </form>
