@@ -49,7 +49,7 @@ function validateInputs() {
   }
 
   // Validate Email
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
     alert("Please enter a valid email address.");
     return false;
@@ -61,6 +61,7 @@ function validateInputs() {
     return false;
   }
 
+  // Sanitize and return object
   return {
     name: sanitizeInput(name),
     email: sanitizeInput(email),
@@ -76,12 +77,14 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
   const validInputs = validateInputs();
   if (!validInputs) return;
 
+  console.log("Sending email with:", validInputs); // Debugging: Log input values
+
   // Send the form data using EmailJS
   emailjs
     .send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, {
-      user_name: validInputs.name,
-      user_email: validInputs.email,
-      user_message: validInputs.message,
+      name: validInputs.name,
+      email: validInputs.email,
+      message: validInputs.message,
     })
     .then(function (response) {
       console.log("SUCCESS!", response.status, response.text);
@@ -95,6 +98,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
       alert("Failed to send email. Please try again later.");
     });
 });
+
 
 // Duplicate the scrolling content
 duplicatedContent();
