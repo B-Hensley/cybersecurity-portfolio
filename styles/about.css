@@ -1,0 +1,32 @@
+/* About me section and styles */
+#about-section {
+  align-items: center;
+  animation: scale-up linear;
+  animation-timeline: view(1000px 0);
+  background-image: radial-gradient(
+    farthest-corner,
+    rgba(19, 112, 194, 0.514),
+    rgba(8, 34, 56, 0.13)
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px black, inset 0px 0.5px 8px -3px var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+#about-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-paragraph {
+  font-family: var(--primary-font);
+  font-size: 1.25rem;
+}

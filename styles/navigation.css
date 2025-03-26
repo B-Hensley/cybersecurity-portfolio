@@ -1,0 +1,170 @@
+/* This file contains the styles for the navigation bar */
+
+/* Navigation bar styles */
+nav {
+  padding-top: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+#navbar {
+  background-color: rgba(1, 26, 54, 0.359);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px black, inset 0px 0.5px 8px -3px var(--primary-color);
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem 2rem;
+  width: fit-content;
+  z-index: 2;
+}
+
+/* Styles for the navigation menu for mobile. Set desktop version to display none to hide */
+#nav-toggle,
+#nav-toggle-label {
+  display: none;
+}
+
+/* Styles for the navigation links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Styles for the navigation link */
+.nav-link {
+  color: white;
+  font-family: var(--secondary-font);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: var(--mobile-body-fs);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link::after {
+  background-color: var(--primary-color);
+  bottom: 0;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 0.2s;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Navigation styles for mobile */
+@media screen and (max-width: 700px) {
+  #navbar {
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    top: -15rem;
+    width: 100%;
+  }
+
+  /* Styles for the navigation toggle */
+  #nav-toggle-label {
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    height: 4px;
+    position: fixed;
+    right: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    top: 1.5rem;
+    width: 2rem;
+  }
+
+  #nav-toggle-label::before,
+  #nav-toggle-label::after {
+    background-color: white;
+    content: '';
+    border-radius: 4px;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  #nav-toggle-label::before {
+    top: -8px;
+  }
+
+  #nav-toggle-label::after {
+    bottom: -8px;
+  }
+
+  #nav-toggle-label.menu-open {
+    background-color: transparent;
+  }
+
+  #nav-toggle-label.menu-open::before {
+    transform: rotate(45deg) translate(0px, 12px);
+  }
+
+  #nav-toggle-label.menu-open::after {
+    transform: rotate(-45deg) translate(0px, -12px);
+  }
+
+  /* Hide navigation links */
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    top: 1rem;
+    z-index: 1;
+  }
+
+  /* Show navigation links */
+  #nav-toggle:checked + #navbar {
+    animation: move-navbar-down 0.5s ease-in-out forwards;
+  }
+
+  #nav-toggle:not(:checked) + #navbar {
+    animation: move-navbar-up 0.5s ease-in-out forwards;
+  }
+
+  /* Keyframe to move the navbar up or down */
+  @keyframes move-navbar-down {
+    0% {
+      top: -15rem;
+    }
+    100% {
+      top: 3rem;
+    }
+  }
+
+  @keyframes move-navbar-up {
+    0% {
+      top: 3rem;
+    }
+    100% {
+      top: -15rem;
+    }
+  }
+
+  .nav-link {
+    font-size: var(--mobile-paragraph-fs);
+  }
+}

@@ -1,0 +1,178 @@
+/* This file contains the styles for the hero section */
+
+/* Background Video styles */
+#bg-video {
+  backdrop-filter: darken;
+  filter: blur(2px);
+  max-width: 100dvw;
+  min-height: 100vh;
+  object-fit: cover;
+  opacity: 0.6;
+  overflow-x: hidden;
+  position: fixed;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* Add a wrapper for the main content to ensure proper stacking */
+#wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* Ensure footer stays at the bottom */
+footer {
+  position: relative;
+  z-index: 1;
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading element styles */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 10rem 16rem 2rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: var(--desktop-title-fs);
+  text-shadow: 1px 2px 6px var(--secondary-color);
+}
+
+#hero-subtitle {
+  width: 80%;
+}
+
+.subtitle {
+  font-family: var(--secondary-font);
+  font-size: var(--desktop-subtitle-fs);
+}
+
+/* Styles for the section containing the download resume btn and the avatar */
+#resume-img-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 16rem;
+}
+
+#resume-link {
+  display: flex;
+  margin: auto;
+  text-decoration: none;
+}
+
+#download-resume-btn {
+  background-color: rgba(38, 54, 68, 0.2);
+  backdrop-filter: blur(3px);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px black, inset 0px 0.5px 8px -3px var(--primary-color),
+    0px 1.5px 8px 1px var(--primary-color);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--secondary-font);
+  font-size: var(--desktop-body-fs);
+  gap: 0.5rem;
+  height: fit-content;
+  padding: 0.7rem 1.5rem 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+#download-resume-btn:hover {
+  animation: none;
+  box-shadow: 0px 2px 8px black, inset 0px 0.5px 8px -3px var(--primary-color),
+    0px 1.5px 15px 2px #68e8ff;
+  transform: scale(1.2);
+}
+
+#download-icon {
+  font-size: 1.875rem;
+}
+
+/* Avatar container and image styles */
+.avatar-animation-container {
+  border-radius: 50%;
+  padding: 0.5rem;
+  position: relative;
+  transition: all 0.2s;
+  width: fit-content;
+}
+
+.avatar-animation-container:hover {
+  transform: scale(1.05);
+}
+
+.avatar-animation-container:active {
+  transform: scale(0.95);
+}
+
+.avatar-animation-container::before {
+  animation: rotate-bg 5s linear infinite;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    var(--primary-color),
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
+  border-radius: 50%;
+  content: '';
+  filter: blur(10px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Animation to rotate 'light like object' behind the portrait */
+@keyframes rotate-bg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar-container {
+  background-image: radial-gradient(
+    farthest-corner,
+    var(--primary-color),
+    var(--background-color),
+    rgba(0, 225, 255, 0.37)
+  );
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+  height: 400px;
+  overflow: hidden;
+  padding: 4rem;
+  position: relative;
+  width: 400px;
+  z-index: 4;
+}
+
+.avatar {
+  background-blend-mode: difference;
+  background-image: url(../public/images/renaees-portrait.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}

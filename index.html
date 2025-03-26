@@ -1,319 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNBSREFN0L"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QNBSREFN0L"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'G-QNBSREFN0L');
+      gtag('config', 'G-QNBSREFN0L');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Cybersecurity professional portfolio of Brenda Hensley, showcasing skills in cybersecurity. Includes educational background
-    certifications, and skills.">
-    <meta name="keywords" content="Cybersecurity, security analyst, information security, Comptia A+, ISC2 certified in cybersecurity, Cybersecurity Professional,
-    Cybersecurity Specialist, WGU, blue team, cybersecurity portfolio, Brenda Hensley">
-    <meta name="author" content="Brenda Hensley">
-    <meta property="og:title" content="Cybersecurity Portfolio - Brenda Hensley">
-    <meta property="og:description" content="Explore the professional journey of Brenda Hensley, a cybersecurity professional.">
-    <meta property="og:image" content="public/images/homepage-screenshot.png">
-    <meta property="og:url" content="https://b-hensley.github.io/cybersecurity-portfolio/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Cybersecurity Portfolio - Brenda Hensley">
-    <meta name="twitter:description" content="Professional cybersecurity portfolio of Brenda Hensley.">
-    <meta name="twitter:image" content="public/images/homepage-screenshot.png">
-    <meta itemprop=”name” content="Cybersecurity Portfolio - Brenda Hensley">
-    <meta itemprop=”description” content="Professional cybersecurity portfolio of Brenda Hensley.">
-    <meta itemprop=”image” content="public/images/homepage-screenshot.png">
+    <!-- Meta tags for SEO -->
+    <meta
+      name="description"
+      content="Cybersecurity professional portfolio of Brenda Hensley, showcasing skills in cybersecurity. Includes educational background
+      certifications, and skills." />
+    <meta
+      name="keywords"
+      content="Cybersecurity, security analyst, information security, Comptia A+, ISC2 certified in cybersecurity, Cybersecurity Professional,
+      Cybersecurity Specialist, WGU, blue team, cybersecurity portfolio, Brenda Hensley" />
+    <meta name="author" content="Brenda Hensley" />
+    <meta
+      property="og:title"
+      content="Cybersecurity Portfolio - Brenda Hensley" />
+    <meta
+      property="og:description"
+      content="Explore the professional journey of Brenda Hensley, a cybersecurity professional." />
+    <meta property="og:image" content="public/images/homepage-screenshot.png" />
+    <meta
+      property="og:url"
+      content="https://b-hensley.github.io/cybersecurity-portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Cybersecurity Portfolio - Brenda Hensley" />
+    <meta
+      name="twitter:description"
+      content="Professional cybersecurity portfolio of Brenda Hensley." />
+    <meta
+      name="twitter:image"
+      content="public/images/homepage-screenshot.png" />
+    <meta
+      itemprop="”name”"
+      content="Cybersecurity Portfolio - Brenda Hensley" />
+    <meta
+      itemprop="”description”"
+      content="Professional cybersecurity portfolio of Brenda Hensley." />
+    <meta itemprop="”image”" content="public/images/homepage-screenshot.png" />
 
     <title>Brenda Hensley</title>
 
-    <link rel="stylesheet" href="index.css">
+    <!-- Links to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+      rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.typekit.net/wzf5yon.css">
-
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-
+    <!-- Link to emailjs -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="module" src="js/email.js"></script>
 
-</head>
-<body>
+    <!-- Links to phospher icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
 
-    <video muted aria-label="Background video" autoplay loop id="bg-video" playsinline>
-        <source src="./public/videos/data-bg-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <!-- Link to typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/wzf5yon.css" />
+
+    <!-- Masonry layout -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Links to local stylesheets -->
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+  </head>
+  <body>
+    <!--Background video-->
+    <video
+      muted
+      aria-label="Background video"
+      autoplay
+      loop
+      id="bg-video"
+      playsinline>
+      <source src="./public/videos/data-bg-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
 
-    <!--Gradient-->
+    <!--Gradient that follows cursor-->
     <div class="blob"></div>
-    
+
+    <!-- Navigation bar -->
     <nav>
-        
-        <div id="navbar">
-
-            <label for="nav-toggle" id="nav-toggle-label"></label>
-            <input name="nav-toggle" type="checkbox" id="nav-toggle">
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="#about-section" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#footer" class="nav-link">Contact</a>
-                </li>
-                <li>
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#certs-skills-section" class="nav-link">Skills</a>
-                </li>
-
-            </ul>
-        </div>
-
+      <label for="nav-toggle" id="nav-toggle-label"></label>
+      <input name="nav-toggle" type="checkbox" id="nav-toggle" />
+      <div id="navbar">
+        <!--Navigation links-->
+        <ul class="nav-links">
+          <li>
+            <a id="home-link" href="#home" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a id="certs-link" href="#certs-skills-section" class="nav-link"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a id="projects-link" href="#projects-section" class="nav-link"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a id="about-link" href="#about-section" class="nav-link">About</a>
+          </li>
+          <li>
+            <a id="contact-link" href="#footer" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- Hero section -->
     <div id="wrapper">
+      <main id="home">
+        <header>
+          <h1>Hello, I'm Brenda Hensley</h1>
+          <h2 id="hero-subtitle" class="subtitle">
+            Cybersecurity Professional dedicated to helping others implement the
+            latest security measures
+          </h2>
+        </header>
 
-        <main id="home">
+        <section id="resume-img-section">
+          <a
+            id="resume-link"
+            href="./public/Brenda_Hensley_Cybersecurity_Analyst_Resume.pdf"
+            download="Brenda_Hensley_Resume_Cybersecurity_Analyst_Resume.pdf">
+            <button id="download-resume-btn">
+              Resume <i id="download-icon" class="ph ph-cloud-arrow-down"></i>
+            </button>
+          </a>
 
-            <header>
-                <h1>Hello, I'm Brenda Hensley</h1>
-                <h2 id="hero-subtitle" class="subtitle">Cybersecurity Professional dedicated to helping others implement the latest security measures</h2>
-            </header>
-    
-            <section id="resume-img-section">
-    
-                <a id="resume-link" href="./public/Brenda_Hensley_Cybersecurity_Analyst_Resume.pdf" download="Brenda_Hensley_Resume_Cybersecurity_Analyst_Resume.pdf">
-                    <button id="download-resume-btn">Resume <i id="download-icon" class="ph ph-cloud-arrow-down"></i></button>
-                </a>
-    
-                <div class="avatar-animation-container">
-                    <div class="avatar-container">
-                        <div class="avatar">
-                        </div>
-                    </div>
-                </div>
-    
-            </section>
-    
-        </main>
-    
-        <section id="certs-skills-section">
-    
-            <h2 id="certs-title" class="subtitle">Certifications</h2>
-    
-            <div id="certs-flexbox">
-    
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/comptia-a-logo.webp" alt="Comptia A+ Logo">
-                    <div class="cert-modal" id="a-Modal">
-                        <p class="modal-date">Date Obtained: October 2024</p>
-                        <ul class="modal-list">
-                            <li>Fundamental computer and networking knowledge</li>
-                            <li>Solid understanding of popular operating systems</li>
-                            <li>Best IT practices</li>
-                            <li>Knowledge of virtualization and cloud computing</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/comptia-network-logo.webp" alt="Comptia Network+ Logo">
-                    <div class="cert-modal" id="network-Modal">
-                        <p class="modal-date">Date Obtained: November 2024</p>
-                        <ul class="modal-list">
-                            <li>Understand and implement basic network designs, including LAN, WAN, and wireless networks</li>
-                            <li>Configure and manage routers, switches, and other critical network hardware</li>
-                            <li>Understand essential networking protocols (TCP/IP, DNS, DHCP) and industry standards</li>
-                            <li>Identify and mitigate basic network security vulnerabilities and implement secure network practices</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/security-logo.webp" alt="Comptia Security+ Logo">
-                    <div class="cert-modal" id="security-Modal">
-                        <p class="modal-date">Date Obtained: November 2024</p>
-                        <ul class="modal-list">
-                            <li>Identify and mitigate security risks to protect systems and data</li>
-                            <li>Recognize and respond to cyber threats like malware and phishing</li>
-                            <li>Understand key regulations and security best practices to meet industry standards</li>
-                            <li>Configure firewalls, VPNs, and access controls to safeguard networks</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/comptia-cysa.webp" alt="Comptia Cysa+ Logo">
-                    <div class="cert-modal" id="cysa-Modal">
-                        <p class="modal-date">Date Obtained: January 2025</p>
-                        <ul class="modal-list">
-                            <li>Identify and analyze cyber threats using SIEM tools (Splunk, ELK, QRadar) and threat intelligence frameworks</li>
-                            <li>Conduct vulnerability scanning (Nessus, OpenVAS), analyze CVSS scores, and prioritize remediation</li>
-                            <li>Follow the Incident Response (IR) lifecycle, analyze malware, and use forensic tools for investigations</li>
-                            <li>Implement firewalls, IDS/IPS (Snort, Suricata), endpoint protection, and secure cloud environments</li>
-                            <li>Utilize SOAR, scripting (Python, Bash, PowerShell) for automation, and apply best practices for system hardening</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/comptia-pentest.webp" alt="Comptia Pentest+ Logo">
-                    <div class="cert-modal" id="pentest-Modal">
-                        <p class="modal-date">Date Obtained: February 2025</p>
-                        <ul class="modal-list">
-                            <li>Understand the full pentesting lifecycle, from planning to reporting</li>
-                            <li>Identify, analyze, and exploit security weaknesses in network systems and applications</li>
-                            <li>Proficient with tools like Metasploit, Nmap, Burp Suite, and Wireshark for security testing</li>
-                            <li>Document findings, provide risk analysis, and deliver recommendations to stakeholders</li>
-                            <li>Knowledge of defensive measures, best practices, and ways to mitigate risks post-exploitation</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/certified-in-cs-logo.webp" alt="Certified in Cybersecurity Logo">
-                    <div class="cert-modal" id="cc-Modal">
-                        <p class="modal-date">Date Obtained: September 2023</p>
-                        <ul class="modal-list">
-                            <li>Understand legal, regulatory, and policy requirements in cybersecurity</li>
-                            <li>Recognize and respond to potential security incidents</li>
-                            <li>Identify and mitigate basic threats to network infrastructure</li>
-                            <li>Apply techniques to secure systems and manage user permissions effectively</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/ITIL-4-Foundation.webp" alt="ITIL v4 Foundation Logo">
-                    <div class="cert-modal" id="itil-Modal">
-                        <p class="modal-date">Date Obtained: November 2024</p>
-                        <ul class="modal-list">
-                            <li>Understand the core principles and key concepts of IT Service Management</li>
-                            <li>Learn how IT services align with business goals to create value for customers and stakeholders</li>
-                            <li>Gain knowledge of key ITIL practices like incident management, change enablement, and service request management</li>
-                            <li>Understand the service value system (SVS) and the service value chain to deliver efficient IT services</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="cert-container">
-                    <img loading="lazy" class="cert-img" src="./public/images/Essentials-Linux.svg" alt="Linux Essentials Logo">
-                    <div class="cert-modal" id="linux-Modal">
-                        <p class="modal-date">Date Obtained: January 2025</p>
-                        <ul class="modal-list">
-                            <li>Understand the core principles and key concepts of IT Service Management</li>
-                            <li>Learn how IT services align with business goals to create value for customers and stakeholders</li>
-                            <li>Gain knowledge of key ITIL practices like incident management, change enablement, and service request management</li>
-                            <li>Understand the service value system (SVS) and the service value chain to deliver efficient IT services</li>
-                        </ul>
-                    </div>
-                </div>
-    
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/brenda-hensley-/"
+            class="avatar-link">
+            <div class="avatar-animation-container">
+              <div class="avatar-container">
+                <div class="avatar"></div>
+              </div>
             </div>
-    
-            <h2 id="skills-title" class="subtitle">Skills</h2>
-    
-            <div id="skill-bar-container">
-                <div id="skills-bar">
-    
-                    <div id="skills-container">
-                        <p class="skill">Linux</p>
-                        <p class="skill">SQL</p>
-                        <p class="skill">Python</p>
-                        <p class="skill">Splunk</p>
-                        <p class="skill">Nmap</p>
-                        <p class="skill">Nessus</p>
-                        <p class="skill">Bash</p>
-                        <p class="skill">Wireshark</p>
-                        <p class="skill">Tcpdump</p>
-                        <p class="skill">Autopsy</p>
-                    </div>
-    
-                </div>
-            </div>
-    
+          </a>
         </section>
-    
-        <section id="about-section">
-    
-                <h2 id="about-title" class="subtitle">Who I Am</h2>
-    
-                <div id="about-paragraph-container">
-                    <p class="about-paragraph">
-                        I'm a tech enthusiast that enjoys learning all of the newest and latest technologies. I've loved learning about tech since I was 4 years old
-                        when my family got our first computer. I was a gamer at an early age and learned how to install mods for minecraft and set up servers on my own. I love to tinker around with all sorts
-                        of tech gadgets and learn how to troubleshoot new problems I encounter. 
-                    </p>
-                    <p class="about-paragraph">
-                        I hold a B.S. in Cybersecurity and Information Assurance from Western Governors University, and have earned several industry recognized certifications such as
-                        CompTIA Pentest+ and CompTIA CySA+. I am currently continuing my education and skills by building home labs, personal projects, and working towards earning
-                        more relavant certifications.
-                    <p class="about-paragraph">
-                        My goals are to learn all that I can about the latest tech and how to prevent the latest forms of cyber attacks, and to help others learn and
-                        prevent them as well. I hope to be an incredible asset to a team or companies to help fortify against these latest attacks.
-                    </p>
-                </div>
-    
-        </section>
+      </main>
 
+      <!-- Skills and certifications section -->
+      <section id="certs-skills-section">
+        <h2 id="certs-title" class="subtitle">Certifications</h2>
+
+        <div id="certs-flexbox">
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/comptia-a-logo.webp"
+                alt="Comptia A+ Logo" />
+            </button>
+            <div class="cert-modal" id="a-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: October 2024</p>
+              <ul class="modal-list">
+                <li>Fundamental computer and networking knowledge</li>
+                <li>Solid understanding of popular operating systems</li>
+                <li>Best IT practices</li>
+                <li>Knowledge of virtualization and cloud computing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/comptia-network-logo.webp"
+                alt="Comptia Network+ Logo" />
+            </button>
+            <div class="cert-modal" id="network-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: November 2024</p>
+              <ul class="modal-list">
+                <li>
+                  Understand and implement basic network designs, including LAN,
+                  WAN, and wireless networks
+                </li>
+                <li>
+                  Configure and manage routers, switches, and other critical
+                  network hardware
+                </li>
+                <li>
+                  Understand essential networking protocols (TCP/IP, DNS, DHCP)
+                  and industry standards
+                </li>
+                <li>
+                  Identify and mitigate basic network security vulnerabilities
+                  and implement secure network practices
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/security-logo.webp"
+                alt="Comptia Security+ Logo" />
+            </button>
+            <div class="cert-modal" id="security-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: November 2024</p>
+              <ul class="modal-list">
+                <li>
+                  Identify and mitigate security risks to protect systems and
+                  data
+                </li>
+                <li>
+                  Recognize and respond to cyber threats like malware and
+                  phishing
+                </li>
+                <li>
+                  Understand key regulations and security best practices to meet
+                  industry standards
+                </li>
+                <li>
+                  Configure firewalls, VPNs, and access controls to safeguard
+                  networks
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/comptia-cysa.webp"
+                alt="Comptia Cysa+ Logo" />
+            </button>
+            <div class="cert-modal" id="cysa-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: January 2025</p>
+              <ul class="modal-list">
+                <li>
+                  Identify and analyze cyber threats using SIEM tools (Splunk,
+                  ELK, QRadar) and threat intelligence frameworks
+                </li>
+                <li>
+                  Conduct vulnerability scanning (Nessus, OpenVAS), analyze CVSS
+                  scores, and prioritize remediation
+                </li>
+                <li>
+                  Follow the Incident Response (IR) lifecycle, analyze malware,
+                  and use forensic tools for investigations
+                </li>
+                <li>
+                  Implement firewalls, IDS/IPS (Snort, Suricata), endpoint
+                  protection, and secure cloud environments
+                </li>
+                <li>
+                  Utilize SOAR, scripting (Python, Bash, PowerShell) for
+                  automation, and apply best practices for system hardening
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/comptia-pentest.webp"
+                alt="Comptia Pentest+ Logo" />
+            </button>
+            <div class="cert-modal" id="pentest-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: February 2025</p>
+              <ul class="modal-list">
+                <li>
+                  Understand the full pentesting lifecycle, from planning to
+                  reporting
+                </li>
+                <li>
+                  Identify, analyze, and exploit security weaknesses in network
+                  systems and applications
+                </li>
+                <li>
+                  Proficient with tools like Metasploit, Nmap, Burp Suite, and
+                  Wireshark for security testing
+                </li>
+                <li>
+                  Document findings, provide risk analysis, and deliver
+                  recommendations to stakeholders
+                </li>
+                <li>
+                  Knowledge of defensive measures, best practices, and ways to
+                  mitigate risks post-exploitation
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/certified-in-cs-logo.webp"
+                alt="Certified in Cybersecurity Logo" />
+            </button>
+            <div class="cert-modal" id="cc-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: September 2023</p>
+              <ul class="modal-list">
+                <li>
+                  Understand legal, regulatory, and policy requirements in
+                  cybersecurity
+                </li>
+                <li>Recognize and respond to potential security incidents</li>
+                <li>
+                  Identify and mitigate basic threats to network infrastructure
+                </li>
+                <li>
+                  Apply techniques to secure systems and manage user permissions
+                  effectively
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/sscp-icon.webp"
+                alt="SSCP Logo" />
+            </button>
+            <div class="cert-modal" id="sscp-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: March 2025</p>
+              <ul class="modal-list">
+                <li>
+                  Understand the core principles and key concepts of IT Service
+                  Management
+                </li>
+                <li>
+                  Learn how IT services align with business goals to create
+                  value for customers and stakeholders
+                </li>
+                <li>
+                  Gain knowledge of key ITIL practices like incident management,
+                  change enablement, and service request management
+                </li>
+                <li>
+                  Understand the service value system (SVS) and the service
+                  value chain to deliver efficient IT services
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/ITIL-4-Foundation.webp"
+                alt="ITIL v4 Foundation Logo" />
+            </button>
+            <div class="cert-modal" id="itil-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: November 2024</p>
+              <ul class="modal-list">
+                <li>
+                  Understand the core principles and key concepts of IT Service
+                  Management
+                </li>
+                <li>
+                  Learn how IT services align with business goals to create
+                  value for customers and stakeholders
+                </li>
+                <li>
+                  Gain knowledge of key ITIL practices like incident management,
+                  change enablement, and service request management
+                </li>
+                <li>
+                  Understand the service value system (SVS) and the service
+                  value chain to deliver efficient IT services
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cert-container">
+            <button class="cert-img-button">
+              <img
+                loading="lazy"
+                class="cert-img"
+                src="./public/images/Essentials-Linux.svg"
+                alt="Linux Essentials Logo" />
+            </button>
+            <div class="cert-modal" id="linux-Modal">
+              <button class="close-modal-btn">
+                <i class="close-modal-icon ph ph-x"></i>
+              </button>
+              <p class="modal-date">Date Obtained: January 2025</p>
+              <ul class="modal-list">
+                <li>
+                  Understand the core principles and key concepts of IT Service
+                  Management
+                </li>
+                <li>
+                  Learn how IT services align with business goals to create
+                  value for customers and stakeholders
+                </li>
+                <li>
+                  Gain knowledge of key ITIL practices like incident management,
+                  change enablement, and service request management
+                </li>
+                <li>
+                  Understand the service value system (SVS) and the service
+                  value chain to deliver efficient IT services
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="skills-title" class="subtitle">Skills</h2>
+
+        <div id="skill-bar-container">
+          <div id="skills-bar">
+            <div id="skills-container">
+              <p class="skill">Linux</p>
+              <p class="skill">SQL</p>
+              <p class="skill">Python</p>
+              <p class="skill">Splunk</p>
+              <p class="skill">Nmap</p>
+              <p class="skill">Nessus</p>
+              <p class="skill">Bash</p>
+              <p class="skill">Wireshark</p>
+              <p class="skill">Tcpdump</p>
+              <p class="skill">Autopsy</p>
+              <p class="skill">OWASP ZAP</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects-section">
+        <h2 id="projects-title" class="subtitle">Projects</h2>
+
+        <div class="projects-grid grid">
+          <div class="grid-sizer">
+            <div class="gutter-sizer">
+              <div class="project-card">
+                <video
+                  src="./public/videos/password-generator.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline>
+                  Your browser does not support the video tag.
+                </video>
+                <h3 class="project-title">Password Generator</h3>
+                <div class="card-overlay">
+                  <p class="project-description">
+                    A CLI password generator that allows you to generate a
+                    random password.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://github.com/B-Hensley/password-generator.git"
+                    target="_blank">
+                    <i class="ph ph-github-logo project-icon"></i> View Code
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="./public/images/projectImages/port-scanner-demo.webp"
+                  alt="Port Scanner" />
+                <h3 class="project-title">Port Scanner</h3>
+                <div class="card-overlay">
+                  <p class="project-description">
+                    A simple port scanner that allows you to scan a target IP
+                    address for open ports and logs the results to a file.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://github.com/B-Hensley/port-scanner-with-logging.git"
+                    target="_blank">
+                    <i class="ph ph-github-logo project-icon"></i> View Code
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="./public/images/projectImages/hangman.webp"
+                  alt="Hangman Game" />
+                <h3 class="project-title">Hangman Game</h3>
+                <div class="card-overlay">
+                  <p class="project-description">
+                    A CLI classic hangman game that allows you to guess the
+                    letters of a random word.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://github.com/B-Hensley/hangman-python.git"
+                    target="_blank">
+                    <i class="ph ph-github-logo project-icon"></i> View Code
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="./public/images/projectImages/guess-the-number.webp"
+                  alt="Guess the Number" />
+                <h3 class="project-title">Guess the Number</h3>
+                <div class="card-overlay">
+                  <p class="project-description">
+                    A CLI game that allows you to guess a random number between
+                    1 and 100.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://github.com/B-Hensley/guess-the-number.git"
+                    target="_blank">
+                    <i class="ph ph-github-logo project-icon"></i> View Code
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="./public/images/projectImages/expense-tracker.webp"
+                  alt="Expense Tracker" />
+                <h3 class="project-title">Expense Tracker</h3>
+                <div class="card-overlay">
+                  <p class="project-description">
+                    Full-stack web application, that I conducted security &
+                    vulnerability testing on.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://github.com/B-Hensley/secure-expense-tracker-front-end.git"
+                    target="_blank">
+                    <i class="ph ph-github-logo project-icon"></i> View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about-section">
+        <h2 id="about-title" class="subtitle">Who I Am</h2>
+
+        <div id="about-paragraph-container">
+          <p class="about-paragraph">
+            I'm a tech enthusiast that enjoys learning all of the newest and
+            latest technologies. I've loved learning about tech since I was 4
+            years old when my family got our first computer. I was a gamer at an
+            early age and learned how to install mods for minecraft and set up
+            servers on my own. I love to tinker around with all sorts of tech
+            gadgets and learn how to troubleshoot new problems I encounter.
+          </p>
+          <p class="about-paragraph">
+            I hold a B.S. in Cybersecurity and Information Assurance from
+            Western Governors University, and have earned several industry
+            recognized certifications such as CompTIA Pentest+ and CompTIA
+            CySA+. I am currently continuing my education and skills by building
+            home labs, personal projects, and working towards earning more
+            relevant certifications.
+          </p>
+          <p class="about-paragraph">
+            My goals are to learn all that I can about the latest tech and how
+            to prevent the latest forms of cyber attacks, and to help others
+            learn and prevent them as well. I hope to be an incredible asset to
+            a team or companies to help fortify against these latest attacks.
+          </p>
+        </div>
+      </section>
     </div>
 
     <footer id="footer">
+      <div class="footer-section" id="contact-section">
+        <h3 class="footer-title">Contact</h3>
 
-        <div class="footer-section" id="contact-section">
-
-            <h3 class="footer-title">Contact</h3>
-
-            <form id="contact-form">
-                <fieldset id="input-field">
-                    <div class="input-container">
-                        <label for="name" class="input-label">Name</label>
-                        <input id="name-input" name="name" type="text" class="form-input" placeholder="Your Name" maxlength="50" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="email" class="input-label">Email</label>
-                        <input id="email-input" name="email" type="email" class="form-input" placeholder="Your Email" required>
-                    </div>
-                </fieldset>
-                <div class="input-container">
-                    <label for="message" class="input-label">Message</label>
-                    <textarea class="form-input" rows="3" name="message" id="message" placeholder="Your Message..." maxlength="500" required></textarea>
-                </div>
-                <button id="send-btn" type="submit">Send Email</button>
-            </form>
-
-        </div>
-
-        <div class="footer-section" id="social-section">
-            <h3 class="footer-title">Social</h3>
-            <div id="social-icons">
-                <a target="_blank" href="https://github.com/B-Hensley">
-                    <img loading="lazy" class="social-icon" src="./public/icons/github.svg" alt="GitHub Logo">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/brenda-hensley-/">
-                    <img loading="lazy" src="./public/icons/linkedin.svg" alt="LinkedIn Logo" class="social-icon">
-                </a>
+        <form id="contact-form">
+          <fieldset id="input-field">
+            <div class="input-container">
+              <label for="name" class="input-label">Name</label>
+              <input
+                id="name-input"
+                name="name"
+                type="text"
+                class="form-input"
+                placeholder="Your Name"
+                maxlength="50"
+                required />
             </div>
+            <div class="input-container">
+              <label for="email" class="input-label">Email</label>
+              <input
+                id="email-input"
+                name="email"
+                type="email"
+                class="form-input"
+                placeholder="Your Email"
+                required />
+            </div>
+          </fieldset>
+          <div class="input-container">
+            <label for="message" class="input-label">Message</label>
+            <textarea
+              class="form-input"
+              rows="3"
+              name="message"
+              id="message"
+              placeholder="Your Message..."
+              maxlength="500"
+              required></textarea>
+          </div>
+          <button id="send-btn" type="submit">Send Email</button>
+        </form>
+      </div>
+
+      <div class="footer-section" id="social-section">
+        <h3 class="footer-title">Social</h3>
+        <div id="social-icons">
+          <a target="_blank" href="https://github.com/B-Hensley">
+            <img
+              loading="lazy"
+              class="social-icon"
+              src="./public/icons/github.svg"
+              alt="GitHub Logo" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/brenda-hensley-/">
+            <img
+              loading="lazy"
+              src="./public/icons/linkedin.svg"
+              alt="LinkedIn Logo"
+              class="social-icon" />
+          </a>
         </div>
+      </div>
 
-        <p id="copyright">&copy 2025 Brenda Hensley. Designed and Developed by Gavin Hensley.</p>
-
+      <p id="copyright">
+        &copy <span id="current-year"></span>
+        <a
+          class="github-link"
+          target="_blank"
+          href="https://github.com/B-Hensley"
+          >Brenda Hensley</a
+        >. Designed and Developed by
+        <a
+          class="github-link"
+          target="_blank"
+          href="https://github.com/G-Hensley"
+          >Gavin Hensley</a
+        >.
+      </p>
     </footer>
 
-    <script type="module" src="index.js"></script>
-
-</body>
+    <!-- Links to local javascript -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
