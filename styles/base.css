@@ -271,6 +271,10 @@ body {
     width: 150px;
   }
 
+  .project-card {
+    max-width: 355px;
+  }
+
   #certs-skills-section {
     gap: 0.5rem;
   }
