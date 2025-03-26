@@ -54,9 +54,11 @@ document.addEventListener('click', function (e) {
 // Add event listener to close modal windows if clicking on another cert image
 
 // Move cursor effect
-document.addEventListener('mousemove', function (e) {
-  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
-});
+if (window.innerWidth > 800) {
+  document.addEventListener('mousemove', function (e) {
+    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+  });
+}
 
 // Get active link and add active class
 window.addEventListener('scroll', function () {
