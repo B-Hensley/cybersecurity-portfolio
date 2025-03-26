@@ -197,6 +197,10 @@ body {
     margin: 6rem 2rem 2rem;
   }
 
+  .blob {
+    display: none;
+  }
+
   #resume-img-section {
     flex-direction: column;
     gap: 2rem;
@@ -272,7 +276,9 @@ body {
   }
 
   .project-card {
-    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   #certs-skills-section {
