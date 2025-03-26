@@ -134,6 +134,12 @@ projectCards.forEach((card) => {
 });
 
 // Remove grid class from projects-grid at window width of 1300px
+if (window.innerWidth < 550) {
+  projectsGrid.classList.remove('grid');
+} else {
+  projectsGrid.classList.add('grid');
+}
+
 const grid = document.querySelector('.projects-grid');
       const masonry = new Masonry('.grid', {
         fitWidth: true, // Center the layout
