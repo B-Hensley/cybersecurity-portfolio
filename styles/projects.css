@@ -45,6 +45,7 @@
   text-align: center;
   transition: all 0.2s;
   max-width: 370px;
+  margin: auto;
   margin-bottom: 1rem;
   width: auto;
 }

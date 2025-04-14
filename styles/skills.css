@@ -139,7 +139,7 @@
 .modal-active {
   height: fit-content;
   padding: 3rem;
-  width: 300px;
+  width: 50%;
 }
 
 .modal-active .close-modal-btn {

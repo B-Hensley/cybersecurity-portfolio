@@ -104,6 +104,7 @@ footer {
 }
 
 .social-icon:hover {
+  opacity: 0.6;
   transform: scale(1.2);
 }
 
@@ -125,6 +126,7 @@ footer {
 
 .active-link {
   color: var(--secondary-color);
+  transition: all 0.2s;
 }
 
 .active-link::after {
@@ -132,9 +134,14 @@ footer {
 }
 
 .active-link:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.active-link:hover::after {
+  background-color: var(--primary-color);
 }
 
 .active-link::after {
+  transition: all 0.2s;
   width: 100%;
 }
