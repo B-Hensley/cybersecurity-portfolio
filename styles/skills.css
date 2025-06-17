@@ -193,16 +193,16 @@
 }
 
 #skills-container {
-  animation: skills-scroll linear infinite 20s;
+  animation: skills-scroll linear infinite 25s;
   display: flex;
-  gap: 8rem;
+  gap: 4rem;
   justify-content: space-between;
   width: max-content;
 }
 
 @keyframes skills-scroll {
   to {
-    transform: translateX(calc(-50% - 4rem));
+    transform: translateX(calc(-50% - 2rem));
   }
 }
 
