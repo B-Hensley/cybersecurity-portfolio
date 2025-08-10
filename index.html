@@ -95,6 +95,16 @@
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/base.css" />
+
+    <!--- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js; style-src 'self' 'unsafe-inline' https://use.typekit.net/wzf5yon.css; img-src 'self' data: https://b-hensley.github.io/cybersecurity-portfolio/public/images/; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="no-referrer" />
+    <!--- Don't allow any permissions -->
+    <meta http-equiv="Permissions-Policy" content="none" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
+
   </head>
   <body>
     <!--Background video-->
